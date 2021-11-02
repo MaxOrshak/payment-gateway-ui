@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <title>Payer Information</title>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+<body>
+<div class="bg-img"></div>
+<div class="page-content">
+    <form method="post" class="panel">
+        <div class="panel__heading">Payer Information</div>
+        <div class="panel__content">
+            <div class="control-group control-group--row">
+                <div class="control-group">
+                    <label class="required">First Name</label>
+                    <input class="form-control" required name="firstName" type="text" />
+                </div>
+                <div class="control-group">
+                    <label class="required">Last Name</label>
+                    <input class="form-control" required name="lastName" type="text" />
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="required">Company Name</label>
+                <input class="form-control" required name="companyName" type="text" />
+            </div>
+            <div class="control-group">
+                <label class="required">Company Registration</label>
+                <input class="form-control" required name="companyRegistration" type="text" />
+            </div>
+            <div class="field-group">
+                <h4 class="field-group__title">Billing Address</h4>
+
+                <div class="control-group">
+                    <label class="required">Phone</label>
+                    <input class="form-control" required name="billing[phone]" type="text" />
+                </div>
+                <div class="control-group">
+                    <label class="required">Address Line 1</label>
+                    <input class="form-control" required name="billing[addressLine1]" type="text" />
+                </div>
+                <div class="control-group">
+                    <label>Address Line 2</label>
+                    <input class="form-control" name="billing[addressLine2]" type="text" />
+                </div>
+                <div class="control-group">
+                    <label>Address Line 3</label>
+                    <input class="form-control" name="billing[addressLine3]" type="text" />
+                </div>
+                <div class="control-group control-group--row">
+                    <div class="control-group">
+                        <label class="required">City</label>
+                        <input class="form-control" required name="billing[city]" type="text" />
+                    </div>
+                    <div class="control-group">
+                        <label>State</label>
+                        <input class="form-control" name="billing[state]" type="text" />
+                    </div>
+                </div>
+                <div class="control-group control-group--row">
+                    <div class="control-group">
+                        <label class="required">Postal Code</label>
+                        <input class="form-control" required name="billing[postalCode]" type="text" />
+                    </div>
+                    <div class="control-group">
+                        <label class="required">Country Code</label>
+                        <input class="form-control" required name="billing[countryCode]" type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel__footer">
+            <input class="button button--grey" type="button" value="Close" onclick="window.close()" />
+            <input class="button button--primary" type="submit" />
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <title>Card Information</title>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+<body>
+<div class="bg-img"></div>
+<div class="page-content">
+    <form method="post" class="panel">
+        <div class="panel__heading">Card Information</div>
+        <div class="panel__content">
+            <div class="control-group">
+                <label class="required">Card Number</label>
+                <input class="form-control" required name="card[number]" type="text" maxlength="19" placeholder="●●●● ●●●● ●●●● ●●●●" />
+            </div>
+            <div class="control-group">
+                <label class="required">Card Expiry</label>
+                <div class="control-group control-group--row">
+                    <select class="form-control form-control--narrow" name="card[expiryMonth]"></select>
+                    <select class="form-control form-control--narrow" name="card[expiryYear]"></select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="required">Card CVV</label>
+                <input class="form-control form-control--narrow" required type="text" maxlength="4" name="card[cvv]" />
+            </div>
+        </div>
+        <div class="panel__footer">
+            <input class="button button--grey" type="button" value="Close" onclick="window.close()" />
+            <input class="button button--primary" type="submit" />
+        </div>
+    </form>
+</div>
+<script src="/js/script.js"></script>
+</body>
+</html>
